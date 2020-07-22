@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class Fox : MonoBehaviour
 {
     // Config 
     [SerializeField] float runSpeed = 5f;
@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
         FlipSprite();
         ClimbLadder();
         Fall();
+        Crouch();
         Die();
     }
 
@@ -48,7 +49,6 @@ public class Player : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("Running", playerHasHorizontalSpeed);
     }
-
     private void ClimbLadder()
     {
         if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Climbing"))) {
@@ -64,7 +64,6 @@ public class Player : MonoBehaviour
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         myAnimator.SetBool("Climbing", playerHasVerticalSpeed);
     }
-
     private void Jump()
     {
         if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
@@ -75,7 +74,6 @@ public class Player : MonoBehaviour
             myAnimator.SetBool("Jumping", true);
         }
     }
-
     private void Die()
     {
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy","Hazards")))
@@ -95,7 +93,6 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
         }
     }
-
     private void Fall()
     {
         bool isFalling = myRigidBody.velocity.y < -1e-6;
@@ -104,5 +101,10 @@ public class Player : MonoBehaviour
         {
             myAnimator.SetBool("Jumping", false);
         }
+    }
+    private void Crouch()
+    {
+        bool isPressDown = CrossPlatformInputManager.GetButton("Vertical");
+        myAnimator.SetBool("Crouching", isPressDown);
     }
 }

@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 1235770253
     locked: 0
+  - name: Props
+    uniqueID: 1977557023
+    locked: 0
   - name: Climbing
     uniqueID: 3605193281
     locked: 0
@@ -53,9 +56,6 @@ TagManager:
   - name: Hazards
     uniqueID: 2574500111
     locked: 0
-  - name: Props
-    uniqueID: 1977557023
-    locked: 0
   - name: Player
     uniqueID: 194212513
     locked: 0
@@ -64,7 +64,4 @@ TagManager:
     locked: 0
   - name: Interactables
     uniqueID: 2163185023
-    locked: 0
-  - name: Props
-    uniqueID: 1781340259
     locked: 0
