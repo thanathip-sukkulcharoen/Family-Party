@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CherryPickups : MonoBehaviour
+public class GemPickups : MonoBehaviour
 {
     [SerializeField] AudioClip pickupsSFX;
-    [SerializeField] int pointsForPickups = 100;
+    [SerializeField] int pointsForPickups = 200;
     Animator myAnimator;
     bool isPicked = false;
 

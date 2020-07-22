@@ -17,16 +17,14 @@ public class Player : MonoBehaviour
     // Cache component references
     Rigidbody2D myRigidBody;
     Animator myAnimator;
-    CapsuleCollider2D myBodyCollider;
-    BoxCollider2D myFeet;
+    public BoxCollider2D myBodyCollider;
+    public BoxCollider2D myFeet;
     float gravityScaleAtStart;
     // Message then Method
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-        myBodyCollider = GetComponent<CapsuleCollider2D>();
-        myFeet = GetComponent<BoxCollider2D>();
         gravityScaleAtStart = myRigidBody.gravityScale;
     }
 
@@ -39,7 +37,6 @@ public class Player : MonoBehaviour
         FlipSprite();
         ClimbLadder();
         Fall();
-        StopFall();
         Die();
     }
 
@@ -101,20 +98,11 @@ public class Player : MonoBehaviour
 
     private void Fall()
     {
-        bool isFalling = myAnimator.GetBool("Jumping") && myRigidBody.velocity.y < Mathf.Epsilon;
+        bool isFalling = myRigidBody.velocity.y < -1e-6;
+        myAnimator.SetBool("Falling", isFalling);
         if (isFalling)
         {
-            myAnimator.SetBool("Falling", true);
             myAnimator.SetBool("Jumping", false);
-        }
-    }
-
-    private void StopFall()
-    {
-        bool isTouchTheGround = myAnimator.GetBool("Falling") && myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        if (isTouchTheGround)
-        {
-            myAnimator.SetBool("Falling", false);
         }
     }
 }
