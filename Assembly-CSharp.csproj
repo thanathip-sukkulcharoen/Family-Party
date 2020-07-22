@@ -71,7 +71,13 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\CherryPickups.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\GameSession.cs" />
+    <Compile Include="Assets\Scripts\LevelExit.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\ScenePersist.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -613,6 +619,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Work/Family Party/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/Work/Family Party/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
       <HintPath>D:/Work/Family Party/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
@@ -675,6 +684,9 @@
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
       <HintPath>D:/Work/Family Party/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/Work/Family Party/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>D:/Work/Family Party/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
