@@ -17,14 +17,16 @@ public class Fox : MonoBehaviour
     // Cache component references
     Rigidbody2D myRigidBody;
     Animator myAnimator;
-    public BoxCollider2D myBodyCollider;
-    public BoxCollider2D myFeet;
+    BoxCollider2D myBodyCollider;
+    CapsuleCollider2D myFeet;
     float gravityScaleAtStart;
     // Message then Method
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        myBodyCollider = GetComponent<BoxCollider2D>();
+        myFeet = GetComponent<CapsuleCollider2D>();
         gravityScaleAtStart = myRigidBody.gravityScale;
     }
 
@@ -66,7 +68,7 @@ public class Fox : MonoBehaviour
     }
     private void Jump()
     {
-        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground","Platform"))) { return; }
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
@@ -95,7 +97,7 @@ public class Fox : MonoBehaviour
     }
     private void Fall()
     {
-        bool isFalling = myRigidBody.velocity.y < -1e-6;
+        bool isFalling = myRigidBody.velocity.y < -1e-4;
         myAnimator.SetBool("Falling", isFalling);
         if (isFalling)
         {

@@ -21,7 +21,7 @@ TagManager:
   - Hazards
   - Interactables
   - Props
-  - 
+  - Platform
   - 
   - 
   - 
@@ -47,21 +47,24 @@ TagManager:
   - name: Props
     uniqueID: 1977557023
     locked: 0
-  - name: Climbing
-    uniqueID: 3605193281
-    locked: 0
   - name: Enemy
     uniqueID: 1095442167
     locked: 0
   - name: Hazards
     uniqueID: 2574500111
     locked: 0
+  - name: Climbing
+    uniqueID: 3605193281
+    locked: 0
+  - name: Platform
+    uniqueID: 2511834109
+    locked: 0
   - name: Player
     uniqueID: 194212513
     locked: 0
-  - name: Foreground
-    uniqueID: 1759792623
-    locked: 0
   - name: Interactables
     uniqueID: 2163185023
+    locked: 0
+  - name: Foreground
+    uniqueID: 1759792623
     locked: 0
