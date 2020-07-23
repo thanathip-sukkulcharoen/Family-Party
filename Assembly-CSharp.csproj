@@ -81,6 +81,12 @@
     <Compile Include="Assets\Scripts\GameSession.cs" />
     <Compile Include="Assets\Scripts\LevelExit.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\Network\Client.cs" />
+    <Compile Include="Assets\Scripts\Network\ClientHandle.cs" />
+    <Compile Include="Assets\Scripts\Network\ClientSend.cs" />
+    <Compile Include="Assets\Scripts\Network\Packet.cs" />
+    <Compile Include="Assets\Scripts\Network\ThreadManager.cs" />
+    <Compile Include="Assets\Scripts\Network\UIManager.cs" />
     <Compile Include="Assets\Scripts\ScenePersist.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEngine">
