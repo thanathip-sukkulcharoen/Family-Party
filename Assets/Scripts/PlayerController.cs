@@ -1,11 +1,40 @@
-﻿using System;
+﻿using Mirror;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Fox : MonoBehaviour
+public class PlayerController : NetworkBehaviour
 {
+    /*
+    Rigidbody2D rigidbody2D;
+    public float speed;
+    private void Awake()
+    {
+        rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+    
+    public override void OnStartServer()
+    {
+        base.OnStartServer();
+        // only simulate body on server
+        rigidbody2D.simulated = true;
+    }
+    
+    private void FixedUpdate()
+    {
+        if (isLocalPlayer)
+        {
+            rigidbody2D.velocity += new Vector2(0, CrossPlatformInputManager.GetAxis("Vertical") * speed * Time.fixedDeltaTime);
+        }
+    }
+    */
+
+    
+    
     // Config 
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
@@ -21,7 +50,7 @@ public class Fox : MonoBehaviour
     CapsuleCollider2D myFeet;
     float gravityScaleAtStart;
     // Message then Method
-    void Start()
+    private void Awake()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
@@ -33,24 +62,36 @@ public class Fox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!hasAuthority) { return; }
         if (!isAlive) { return; }
         Run();
+        //RunUp();
+        
         Jump();
         FlipSprite();
         ClimbLadder();
         Fall();
         Crouch();
         Die();
+        
     }
-
     private void Run()
     {
-        float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal"); // -1 to +1
-        Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidBody.velocity.y);
-        myRigidBody.velocity = playerVelocity;
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
-        myAnimator.SetBool("Running", playerHasHorizontalSpeed);
+        float controlThrow = CrossPlatformInputManager.GetAxis("Vertical"); // -1 to +1
+        Vector2 playerVelocity = new Vector2(0f, controlThrow * runSpeed * Time.deltaTime);
+        GetComponent<PhysicsLink>().ApplyForce(playerVelocity, ForceMode2D.Impulse);
+       // bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+       // myAnimator.SetBool("Running", playerHasHorizontalSpeed);
     }
+    private void RunUp()
+    {
+        float controlThrow = CrossPlatformInputManager.GetAxis("Vertical"); // -1 to +1
+        Vector2 playerVelocity = new Vector2(0f, controlThrow * runSpeed);
+        GetComponent<PhysicsLink>().ApplyForce(playerVelocity, ForceMode2D.Force);
+        // bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        // myAnimator.SetBool("Running", playerHasHorizontalSpeed);
+    }
+    
     private void ClimbLadder()
     {
         if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Climbing"))) {
@@ -72,7 +113,7 @@ public class Fox : MonoBehaviour
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
-            myRigidBody.velocity += jumpVelocityToAdd;
+            myRigidBody.velocity = jumpVelocityToAdd;
             myAnimator.SetBool("Jumping", true);
         }
     }
@@ -106,7 +147,9 @@ public class Fox : MonoBehaviour
     }
     private void Crouch()
     {
-        bool isPressDown = CrossPlatformInputManager.GetButton("Vertical");
+        bool isPressDown = CrossPlatformInputManager.GetAxis("Vertical") < 0;
         myAnimator.SetBool("Crouching", isPressDown);
     }
+   
+    
 }

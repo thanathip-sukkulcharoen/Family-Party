@@ -342,3 +342,7 @@ healthchecksdb
 /Assets/SampleScenes
 /Library
 /Temp
+/Assets/Mirror
+/Assets/ScriptTemplates
+/Assets/StreamingAssets
+/Builds
