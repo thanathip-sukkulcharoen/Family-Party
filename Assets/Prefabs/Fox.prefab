@@ -98,14 +98,14 @@ GameObject:
   - component: {fileID: 7070651240603536642}
   - component: {fileID: 7070651240603536652}
   - component: {fileID: 7070651240603536653}
-  - component: {fileID: 3280005529813934842}
   - component: {fileID: 4622960409687301358}
   - component: {fileID: 1079941915530211200}
   - component: {fileID: 8939944586431223617}
   - component: {fileID: 4209328155653729685}
   - component: {fileID: 7589592809833129064}
   - component: {fileID: 1531202985036516599}
-  - component: {fileID: 8775191477255994711}
+  - component: {fileID: 3280005529813934842}
+  - component: {fileID: 2551069614142349808}
   m_Layer: 10
   m_Name: Fox
   m_TagString: Untagged
@@ -198,24 +198,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3280005529813934842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7070651240603536643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c937e51628e848f458e04f0d38b5ddb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  runSpeed: 50
-  jumpSpeed: 50
-  climbSpeed: 5
-  deathKick: {x: 25, y: 25}
 --- !u!70 &4622960409687301358
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -267,13 +249,13 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7070651240603536643}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: 6f09d5a6a60cc2440b4f48c865fa6d96, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -329,20 +311,38 @@ MonoBehaviour:
   syncInterval: 0.1
   clientAuthority: 0
   animator: {fileID: 7070651240603536652}
---- !u!114 &8775191477255994711
+--- !u!114 &3280005529813934842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7070651240603536643}
-  m_Enabled: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c937e51628e848f458e04f0d38b5ddb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  Control: {x: 0, y: 0}
+  runSpeed: 8
+  jumpSpeed: 6
+  climbSpeed: 5
+--- !u!114 &2551069614142349808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070651240603536643}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b156a41df034fe247bf81d3c745e8397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  rigidbody2D: {fileID: 8939944586431223617}
+  rigidbody2D: {fileID: 0}
   velocity: {x: 0, y: 0}
   position: {x: 0, y: 0}
