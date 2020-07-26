@@ -16,7 +16,6 @@ public class ChatBehaviour : NetworkBehaviour
     public override void OnStartAuthority()
     {
         chatUI.SetActive(true);
-
         OnMessage += HandleNewMessage;
     }
 
