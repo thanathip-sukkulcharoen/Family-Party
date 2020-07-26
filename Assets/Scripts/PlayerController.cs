@@ -9,38 +9,41 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : NetworkBehaviour
 {
-    [SyncVar]
-    public Vector2 Control;
+    [SyncVar] Vector2 CrossControl;
+    [SyncVar] Vector2 Position;
+    // Set Constants because somehow when set float = 0, still greater than Mathf.Epsilon
+    private const float Epsilon = 1e-3f;
     // Config 
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
-    [SerializeField] float climbSpeed = 5f;
+    //[SerializeField] float climbSpeed = 5f;
     //[SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
     // State
     bool isAlive = true;
 
     // Cache component references
     PhysicsLink physicsLink;
-    Animator myAnimator;
-    BoxCollider2D myBodyCollider;
-    CapsuleCollider2D myFeet;
-    float gravityScaleAtStart;
+    Rigidbody2D rigidbody2D;
+    BoxCollider2D bodyCollider;
+    CapsuleCollider2D feet;
+    Animator animator;
+    //float gravityScaleAtStart;
     // Message then Method
     private void Awake()
     {
         physicsLink = GetComponent<PhysicsLink>();
-        myAnimator = GetComponent<Animator>();
-        myBodyCollider = GetComponent<BoxCollider2D>();
-        myFeet = GetComponent<CapsuleCollider2D>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
+        bodyCollider = GetComponent<BoxCollider2D>();
+        feet = GetComponent<CapsuleCollider2D>();
+        animator = GetComponent<Animator>();
         //gravityScaleAtStart = myRigidBody.gravityScale;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Control = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical"));
-        if (!isLocalPlayer) { return; }
+        if (!hasAuthority) { return; }
         if (!isAlive) { return; }
+        CrossControl = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical"));
         Run();
         Jump();
         FlipSprite();
@@ -49,33 +52,47 @@ public class PlayerController : NetworkBehaviour
     }
     private void Run()
     {
-        Vector2 playerVelocity = new Vector2(Control.x * runSpeed , physicsLink.rigidbody2D.velocity.y);
-        physicsLink.Move(playerVelocity);
-        bool playerHasHorizontalSpeed = Mathf.Abs(physicsLink.velocity.x) > Mathf.Epsilon;
-        myAnimator.SetBool("Running", playerHasHorizontalSpeed);
+        Vector2 runVelocity = new Vector2(CrossControl.x * runSpeed, rigidbody2D.velocity.y);
+        rigidbody2D.velocity = runVelocity;
+        bool playerHasHorizontalSpeed = Mathf.Abs(rigidbody2D.velocity.x) > Epsilon;
+        animator.SetBool("Running", playerHasHorizontalSpeed);
         
     }
-    
-    private void Jump()
+    public void Jump()
     {
-        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground", "Platform", "Player"))) { return; }
+        if (!feet.IsTouchingLayers(LayerMask.GetMask("Ground", "Platform", "Player"))) { return; }
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
-            Vector2 jumpVelocityToAdd = new Vector2(0, jumpSpeed);
-            physicsLink.AddVector(jumpVelocityToAdd);
-            myAnimator.SetBool("Jumping", true);
+            Vector2 jumpVelocity = new Vector2(0, jumpSpeed);
+            rigidbody2D.velocity += jumpVelocity;
+            animator.SetBool("Jumping", true);
         }
     }
+    
     private void FlipSprite()
     {
         //if the player is moving horizontal
-        bool playerHasHorizontalSpeed = Mathf.Abs(physicsLink.velocity.x) > Mathf.Epsilon;
+        bool playerHasHorizontalSpeed = Mathf.Abs(rigidbody2D.velocity.x) > Epsilon;
         if (playerHasHorizontalSpeed)
         {
-            transform.localScale = new Vector2(Mathf.Sign(physicsLink.velocity.x), 1f);
+            transform.localScale = new Vector2(Mathf.Sign(rigidbody2D.velocity.x), 1f);
         }
     }
-    
+    private void Fall()
+    {
+        bool isFalling = rigidbody2D.velocity.y < -1 * Epsilon;
+        animator.SetBool("Falling", isFalling);
+        if (isFalling)
+        {
+            animator.SetBool("Jumping", false);
+        }
+    }
+    private void Crouch()
+    {
+        bool isPressDown = CrossControl.y < -1 * Epsilon;
+        animator.SetBool("Crouching", isPressDown);
+    }
+
     /*
     private void ClimbLadder()
     {
@@ -105,19 +122,4 @@ public class PlayerController : NetworkBehaviour
         }
     }
     */
-    private void Fall()
-    {
-        bool isFalling = physicsLink.velocity.y < -1e-4;
-        myAnimator.SetBool("Falling", isFalling);
-        if (isFalling)
-        {
-            myAnimator.SetBool("Jumping", false);
-        }
-    }
-    private void Crouch()
-    {
-        bool isPressDown = CrossPlatformInputManager.GetAxis("Vertical") < 0;
-        myAnimator.SetBool("Crouching", isPressDown);
-    }
-   
 }
