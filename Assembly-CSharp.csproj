@@ -63,9 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DestroyOnExit.cs" />
-    <Compile Include="Assets\GemPickups.cs" />
-    <Compile Include="Assets\OnStateEnter.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -76,9 +73,11 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\ChatBehaviour.cs" />
     <Compile Include="Assets\Scripts\CherryPickups.cs" />
+    <Compile Include="Assets\Scripts\DestroyOnExit.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Frog.cs" />
     <Compile Include="Assets\Scripts\GameSession.cs" />
+    <Compile Include="Assets\Scripts\GemPickups.cs" />
     <Compile Include="Assets\Scripts\LevelExit.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Network\Client.cs" />
@@ -87,6 +86,7 @@
     <Compile Include="Assets\Scripts\Network\Packet.cs" />
     <Compile Include="Assets\Scripts\Network\ThreadManager.cs" />
     <Compile Include="Assets\Scripts\Network\UIManager.cs" />
+    <Compile Include="Assets\Scripts\OnStateEnter.cs" />
     <Compile Include="Assets\Scripts\PhysicsLink.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ScenePersist.cs" />

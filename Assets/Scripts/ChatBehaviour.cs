@@ -8,17 +8,16 @@ using System;
 public class ChatBehaviour : NetworkBehaviour
 {
     [SerializeField] private GameObject chatUI = null;
-    [SerializeField] private TMP_Text chatText = null;
     [SerializeField] private TMP_InputField inputField = null;
-
-    private static event Action<TMP_Text,string> OnMessage;
+    [SerializeField] private TMP_Text chatText = null;
+    [SerializeField] private CanvasGroup cg;
+    private static event Action<ChatBehaviour, string> OnMessage;
 
     public override void OnStartAuthority()
     {
         chatUI.SetActive(true);
         OnMessage += HandleNewMessage;
     }
-
     [ClientCallback]
     private void OnDestroy()
     {
@@ -26,9 +25,11 @@ public class ChatBehaviour : NetworkBehaviour
         OnMessage -= HandleNewMessage;
     }
 
-    private void HandleNewMessage(TMP_Text sender, string message)
+    private void HandleNewMessage(ChatBehaviour sender, string message)
     {
-        sender.text = message;
+        //StopCoroutine(DeleteChatMessage(sender.GetComponent<ChatBehaviour>().cg));
+        sender.chatText.text = message;
+        sender.StartCoroutine(DeleteChatMessage(sender.cg));
     }
 
     [Client]
@@ -49,6 +50,17 @@ public class ChatBehaviour : NetworkBehaviour
     [ClientRpc]
     private void RpcHandleMessage(string message)
     {
-        OnMessage?.Invoke(chatText,$"{message}");
+        OnMessage?.Invoke(this, $"{message}");
+    }
+
+    private IEnumerator DeleteChatMessage(CanvasGroup cg)
+    {
+        cg.alpha = 1f;
+        yield return new WaitForSeconds(2f);
+        while (cg.alpha > 0)
+        {
+            cg.alpha -= 0.05f;
+            yield return new WaitForSeconds(0.05f);
+        }
     }
 }
