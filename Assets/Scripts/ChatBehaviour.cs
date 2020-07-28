@@ -11,6 +11,7 @@ public class ChatBehaviour : NetworkBehaviour
     [SerializeField] private TMP_InputField inputField = null;
     [SerializeField] private TMP_Text chatText = null;
     [SerializeField] private CanvasGroup cg;
+    [SyncVar] public string playerName;
     private static event Action<ChatBehaviour, string> OnMessage;
 
     public override void OnStartAuthority()
@@ -27,7 +28,7 @@ public class ChatBehaviour : NetworkBehaviour
 
     private void HandleNewMessage(ChatBehaviour sender, string message)
     {
-        //StopCoroutine(DeleteChatMessage(sender.GetComponent<ChatBehaviour>().cg));
+        sender.StopAllCoroutines();
         sender.chatText.text = message;
         sender.StartCoroutine(DeleteChatMessage(sender.cg));
     }

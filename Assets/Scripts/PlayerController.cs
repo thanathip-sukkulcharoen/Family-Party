@@ -1,4 +1,5 @@
-﻿using Mirror;
+﻿using Cinemachine;
+using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,16 +23,28 @@ public class PlayerController : NetworkBehaviour
     bool isAlive = true;
 
     // Cache component references
-    PhysicsLink physicsLink;
     Rigidbody2D rigidbody2D;
     BoxCollider2D bodyCollider;
     CapsuleCollider2D feet;
     Animator animator;
+    public RectTransform Display;
+    public RectTransform playerName;
     //float gravityScaleAtStart;
     // Message then Method
+    public override void OnStartAuthority()
+    {
+        base.OnStartAuthority();
+        SetupCinemachineCamera();
+    }
+
+    private void SetupCinemachineCamera()
+    {
+        if (!hasAuthority) { return; }
+        FindObjectOfType<CinemachineVirtualCamera>().Follow = this.gameObject.transform;
+    }
+
     private void Awake()
     {
-        physicsLink = GetComponent<PhysicsLink>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         bodyCollider = GetComponent<BoxCollider2D>();
         feet = GetComponent<CapsuleCollider2D>();
@@ -76,6 +89,8 @@ public class PlayerController : NetworkBehaviour
         if (playerHasHorizontalSpeed)
         {
             transform.localScale = new Vector2(Mathf.Sign(rigidbody2D.velocity.x), 1f);
+            Display.localScale = new Vector2(Mathf.Sign(rigidbody2D.velocity.x), 1f);
+            playerName.localScale = new Vector2(Mathf.Sign(rigidbody2D.velocity.x), 1f);
         }
     }
     private void Fall()
