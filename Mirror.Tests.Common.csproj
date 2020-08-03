@@ -63,10 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Tests\Common\ClientSceneTestsBase.cs" />
-    <Compile Include="Assets\Mirror\Tests\Common\ClientSceneTests_RegisterPrefabBase.cs" />
-    <Compile Include="Assets\Mirror\Tests\Common\MemoryTransport.cs" />
-    <None Include="Assets\Mirror\Tests\Common\Mirror.Tests.Common.asmdef" />
+    <Compile Include="Assets\Others\Mirror\Tests\Common\ClientSceneTestsBase.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Common\ClientSceneTests_RegisterPrefabBase.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Common\MemoryTransport.cs" />
+    <None Include="Assets\Others\Mirror\Tests\Common\Mirror.Tests.Common.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

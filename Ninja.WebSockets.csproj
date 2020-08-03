@@ -63,36 +63,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\BufferPool.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\EntityTooLargeException.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\InvalidHttpResponseCodeException.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\SecWebSocketKeyMissingException.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\ServerListenerSocketException.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\WebSocketBufferOverflowException.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\WebSocketHandshakeFailedException.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\WebSocketVersionNotSupportedException.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\HttpHelper.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\IBufferPool.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\IPingPongManager.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\IWebSocketClientFactory.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\IWebSocketServerFactory.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\BinaryReaderWriter.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\Events.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketFrame.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketFrameCommon.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketFrameReader.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketFrameWriter.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketImplementation.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketOpCode.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\PingPongManager.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\PongEventArgs.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketClientFactory.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketClientOptions.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketHttpContext.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketServerFactory.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketServerOptions.cs" />
-    <None Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Ninja.WebSockets.asmdef" />
-    <None Include="Assets\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\README.txt" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\BufferPool.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\EntityTooLargeException.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\InvalidHttpResponseCodeException.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\SecWebSocketKeyMissingException.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\ServerListenerSocketException.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\WebSocketBufferOverflowException.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\WebSocketHandshakeFailedException.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\WebSocketVersionNotSupportedException.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\HttpHelper.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\IBufferPool.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\IPingPongManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\IWebSocketClientFactory.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\IWebSocketServerFactory.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\BinaryReaderWriter.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\Events.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketFrame.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketFrameCommon.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketFrameReader.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketFrameWriter.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketImplementation.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Internal\WebSocketOpCode.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\PingPongManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\PongEventArgs.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketClientFactory.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketClientOptions.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketHttpContext.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketServerFactory.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\WebSocketServerOptions.cs" />
+    <None Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Ninja.WebSockets.asmdef" />
+    <None Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Ninja.WebSockets\Exceptions\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -295,25 +295,25 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

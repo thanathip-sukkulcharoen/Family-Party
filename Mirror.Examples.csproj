@@ -63,46 +63,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\AdditiveNetworkManager.cs" />
-    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\RandomColor.cs" />
-    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\ShootingTankBehaviour.cs" />
-    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\ZoneHandler.cs" />
-    <Compile Include="Assets\Mirror\Examples\Basic\Scripts\Player.cs" />
-    <Compile Include="Assets\Mirror\Examples\Benchmarks\10k\Scripts\BenchmarkNetworkManager.cs" />
-    <Compile Include="Assets\Mirror\Examples\Benchmarks\10k\Scripts\Health.cs" />
-    <Compile Include="Assets\Mirror\Examples\Benchmarks\2k NetworkTransforms\Scripts\MonsterMovement.cs" />
-    <Compile Include="Assets\Mirror\Examples\Benchmarks\2k NetworkTransforms\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Mirror\Examples\Chat\Scripts\ChatNetworkManager.cs" />
-    <Compile Include="Assets\Mirror\Examples\Chat\Scripts\ChatWindow.cs" />
-    <Compile Include="Assets\Mirror\Examples\Chat\Scripts\Player.cs" />
-    <Compile Include="Assets\Mirror\Examples\ListServer\ListServer.cs" />
-    <Compile Include="Assets\Mirror\Examples\ListServer\UI\UIServerStatusSlot.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\MultiSceneNetManager.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PhysicsCollision.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PhysicsSimulator.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PlayerScore.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\RandomColor.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\Reward.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Mirror\Examples\Pong\Scripts\Ball.cs" />
-    <Compile Include="Assets\Mirror\Examples\Pong\Scripts\NetworkManagerPong.cs" />
-    <Compile Include="Assets\Mirror\Examples\Pong\Scripts\Player.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\NetworkRoomManagerExt.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\NetworkRoomPlayerExt.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\PlayerScore.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\RandomColor.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\Reward.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\Tank.cs" />
-    <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\TankGameManager.cs" />
-    <None Include="Assets\Mirror\Examples\Tanks\Textures\(Public Domain) Dirt Hand Painted Texture\Dirt Hand Painted Texture - License.txt" />
-    <None Include="Assets\Mirror\Examples\Benchmarks\10k\Textures\1bitpack_kenney\License.txt" />
-    <None Include="Assets\Mirror\Examples\Tanks\Models\(Public Domain) Recon_Tank\Recon_Tank - License.txt" />
-    <None Include="Assets\Mirror\Examples\Mirror.Examples.asmdef" />
+    <Compile Include="Assets\Others\Mirror\Examples\AdditiveScenes\Scripts\AdditiveNetworkManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\AdditiveScenes\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\AdditiveScenes\Scripts\RandomColor.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\AdditiveScenes\Scripts\ShootingTankBehaviour.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\AdditiveScenes\Scripts\ZoneHandler.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Basic\Scripts\Player.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Benchmarks\10k\Scripts\BenchmarkNetworkManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Benchmarks\10k\Scripts\Health.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Benchmarks\2k NetworkTransforms\Scripts\MonsterMovement.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Benchmarks\2k NetworkTransforms\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Chat\Scripts\ChatNetworkManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Chat\Scripts\ChatWindow.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Chat\Scripts\Player.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\ListServer\ListServer.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\ListServer\UI\UIServerStatusSlot.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\MultipleAdditiveScenes\Scripts\MultiSceneNetManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\MultipleAdditiveScenes\Scripts\PhysicsCollision.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\MultipleAdditiveScenes\Scripts\PhysicsSimulator.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\MultipleAdditiveScenes\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\MultipleAdditiveScenes\Scripts\PlayerScore.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\MultipleAdditiveScenes\Scripts\RandomColor.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\MultipleAdditiveScenes\Scripts\Reward.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\MultipleAdditiveScenes\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Pong\Scripts\Ball.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Pong\Scripts\NetworkManagerPong.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Pong\Scripts\Player.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Room\Scripts\NetworkRoomManagerExt.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Room\Scripts\NetworkRoomPlayerExt.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Room\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Room\Scripts\PlayerScore.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Room\Scripts\RandomColor.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Room\Scripts\Reward.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Room\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Tanks\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Tanks\Scripts\Tank.cs" />
+    <Compile Include="Assets\Others\Mirror\Examples\Tanks\Scripts\TankGameManager.cs" />
+    <None Include="Assets\Others\Mirror\Examples\Tanks\Textures\(Public Domain) Dirt Hand Painted Texture\Dirt Hand Painted Texture - License.txt" />
+    <None Include="Assets\Others\Mirror\Examples\Benchmarks\10k\Textures\1bitpack_kenney\License.txt" />
+    <None Include="Assets\Others\Mirror\Examples\Tanks\Models\(Public Domain) Recon_Tank\Recon_Tank - License.txt" />
+    <None Include="Assets\Others\Mirror\Examples\Mirror.Examples.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -305,25 +305,25 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

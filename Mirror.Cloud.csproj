@@ -63,23 +63,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Cloud\ApiConnector.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\BaseApi.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\Events.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\Extensions.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\ICoroutineRunner.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\IRequestCreator.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\IUnityEqualCheck.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\JsonStructs.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\Logger.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\RequestCreator.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServer.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerBaseApi.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerClientApi.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerJson.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerServerApi.cs" />
-    <None Include="Assets\Mirror\Cloud\Mirror.Cloud.asmdef" />
-    <None Include="Assets\Mirror\Cloud\version.txt" />
+    <Compile Include="Assets\Others\Mirror\Cloud\ApiConnector.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\BaseApi.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\Events.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\Extensions.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\ICoroutineRunner.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\IRequestCreator.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\IUnityEqualCheck.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\JsonStructs.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\Logger.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\Core\RequestCreator.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\ListServer\ListServer.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\ListServer\ListServerBaseApi.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\ListServer\ListServerClientApi.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\ListServer\ListServerJson.cs" />
+    <Compile Include="Assets\Others\Mirror\Cloud\ListServer\ListServerServerApi.cs" />
+    <None Include="Assets\Others\Mirror\Cloud\Mirror.Cloud.asmdef" />
+    <None Include="Assets\Others\Mirror\Cloud\version.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -282,25 +282,25 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

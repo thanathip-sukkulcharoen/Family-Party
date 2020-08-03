@@ -63,14 +63,110 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Others\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+    <Compile Include="Assets\Others\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Others\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+    <Compile Include="Assets\Others\SampleScenes\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\Others\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\Others\SampleScenes\Scripts\ParticleSceneControls.cs" />
+    <Compile Include="Assets\Others\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\Others\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Others\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
+    <Compile Include="Assets\Others\Standard Assets\2D\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Others\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Others\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
+    <Compile Include="Assets\Others\Standard Assets\2D\Scripts\Restarter.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Cameras\Scripts\AutoCam.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Cameras\Scripts\HandHeldCam.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Cameras\Scripts\LookatTarget.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\Others\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
+    <Compile Include="Assets\Others\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\ActivateTrigger.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\CameraRefocus.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\DynamicShadowSettings.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\EventSystemChecker.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\FOVKick.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\FPSCounter.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\FollowTarget.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\SmoothFollow.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\TimedObjectActivator.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\TimedObjectDestructor.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\WaypointCircuit.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAiControl.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAudio.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneController.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\AeroplanePropellerAnimator.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\JetParticleEffect.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Aircraft\Scripts\LandingGear.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\BrakeLight.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
+    <Compile Include="Assets\Others\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
     <Compile Include="Assets\Scripts\ChatBehaviour.cs" />
     <Compile Include="Assets\Scripts\CherryPickups.cs" />
     <Compile Include="Assets\Scripts\DestroyOnExit.cs" />
@@ -78,42 +174,81 @@
     <Compile Include="Assets\Scripts\Frog.cs" />
     <Compile Include="Assets\Scripts\GameSession.cs" />
     <Compile Include="Assets\Scripts\GemPickups.cs" />
+    <Compile Include="Assets\Scripts\JoinLobbyMenu.cs" />
     <Compile Include="Assets\Scripts\LevelExit.cs" />
-    <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\NetworkGamePlayerLobby.cs" />
+    <Compile Include="Assets\Scripts\NetworkManagerLobby.cs" />
+    <Compile Include="Assets\Scripts\NetworkRoomPlayerLobby.cs" />
     <Compile Include="Assets\Scripts\OnStateEnter.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerNameInput.cs" />
+    <Compile Include="Assets\Scripts\PlayerSpawnPoint.cs" />
+    <Compile Include="Assets\Scripts\PlayerSpawnSystem.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\ScenePersist.cs" />
+    <None Include="Assets\Others\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
+    <None Include="Assets\Others\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+    <None Include="Assets\Others\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\Others\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\ScriptTemplates\53-Mirror__Network Observer-NewNetworkObserver.cs.txt" />
-    <None Include="Assets\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
-    <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\Others\Standard Assets\Effects\Projectors\Guidelines.txt" />
+    <None Include="Assets\Others\ScriptTemplates\53-Mirror__Network Observer-NewNetworkObserver.cs.txt" />
+    <None Include="Assets\Others\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Others\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
+    <None Include="Assets\Others\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\Others\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\Others\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Mirror\version.txt" />
-    <None Include="Assets\Mirror\Readme.txt" />
+    <None Include="Assets\Others\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
+    <None Include="Assets\Others\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
+    <None Include="Assets\Others\Standard Assets\Cameras\CameraGuidelines.txt" />
+    <None Include="Assets\Others\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\Others\Mirror\version.txt" />
+    <None Include="Assets\Others\Mirror\Readme.txt" />
+    <None Include="Assets\Others\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+    <None Include="Assets\Others\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Others\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\StreamingAssets\TestResults.xml" />
+    <None Include="Assets\Others\StreamingAssets\TestResults.xml" />
+    <None Include="Assets\Others\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\ScriptTemplates\52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt" />
+    <None Include="Assets\Others\ScriptTemplates\52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt" />
+    <None Include="Assets\Others\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\Others\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Others\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Others\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\Others\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
-    <None Include="Assets\ScriptTemplates\55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt" />
+    <None Include="Assets\Others\Mirror\Plugins\Mono.Cecil\License.txt" />
+    <None Include="Assets\Others\Standard Assets\Effects\ImageEffects\Readme.txt" />
+    <None Include="Assets\Others\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Others\ScriptTemplates\55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt" />
+    <None Include="Assets\Others\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\Others\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\Others\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+    <None Include="Assets\Others\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Others\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\Others\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\ScriptTemplates\50-Mirror__Network Manager-NewNetworkManager.cs.txt" />
+    <None Include="Assets\Others\ScriptTemplates\50-Mirror__Network Manager-NewNetworkManager.cs.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
+    <None Include="Assets\Others\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Others\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Others\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Others\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Others\Standard Assets\Fonts\OpenSans\License!.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -298,25 +433,25 @@
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -761,10 +896,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8764619F-7D7D-3CFB-CFE6-FE41D27D305D}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.Weaver.csproj">
       <Project>{A2EC321A-082E-582D-4838-05387B6C1B84}</Project>
       <Name>Mirror.Weaver</Name>

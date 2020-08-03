@@ -11,7 +11,6 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerController : NetworkBehaviour
 {
     [SyncVar] Vector2 CrossControl;
-    [SyncVar] Vector2 Position;
     // Set Constants because somehow when set float = 0, still greater than Mathf.Epsilon
     private const float Epsilon = 1e-3f;
     // Config 
@@ -29,11 +28,11 @@ public class PlayerController : NetworkBehaviour
     Animator animator;
     public RectTransform Display;
     public RectTransform playerName;
+    [SerializeField] private AudioClip jumpSFX;
     //float gravityScaleAtStart;
     // Message then Method
     public override void OnStartAuthority()
     {
-        base.OnStartAuthority();
         SetupCinemachineCamera();
     }
 
@@ -54,6 +53,8 @@ public class PlayerController : NetworkBehaviour
 
     void Update()
     {
+        FlipChatText();
+        FlipPlayerName();
         if (!hasAuthority) { return; }
         if (!isAlive) { return; }
         CrossControl = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical"));
@@ -69,7 +70,6 @@ public class PlayerController : NetworkBehaviour
         rigidbody2D.velocity = runVelocity;
         bool playerHasHorizontalSpeed = Mathf.Abs(rigidbody2D.velocity.x) > Epsilon;
         animator.SetBool("Running", playerHasHorizontalSpeed);
-        
     }
     public void Jump()
     {
@@ -79,6 +79,7 @@ public class PlayerController : NetworkBehaviour
             Vector2 jumpVelocity = new Vector2(0, jumpSpeed);
             rigidbody2D.velocity += jumpVelocity;
             animator.SetBool("Jumping", true);
+            TriggerJumpSFX();
         }
     }
     
@@ -89,10 +90,18 @@ public class PlayerController : NetworkBehaviour
         if (playerHasHorizontalSpeed)
         {
             transform.localScale = new Vector2(Mathf.Sign(rigidbody2D.velocity.x), 1f);
-            Display.localScale = new Vector2(Mathf.Sign(rigidbody2D.velocity.x), 1f);
-            playerName.localScale = new Vector2(Mathf.Sign(rigidbody2D.velocity.x), 1f);
         }
     }
+    private void FlipChatText()
+    {
+        Display.localScale = new Vector2(Mathf.Sign(transform.localScale.x), 1f);
+    }
+
+    private void FlipPlayerName()
+    {
+        playerName.localScale = new Vector2(Mathf.Sign(transform.localScale.x), 1f);
+    }
+
     private void Fall()
     {
         bool isFalling = rigidbody2D.velocity.y < -1 * Epsilon;
@@ -107,7 +116,12 @@ public class PlayerController : NetworkBehaviour
         bool isPressDown = CrossControl.y < -1 * Epsilon;
         animator.SetBool("Crouching", isPressDown);
     }
-
+    
+    private void TriggerJumpSFX()
+    {
+        AudioSource.PlayClipAtPoint(jumpSFX, this.transform.position);
+        
+    }
     /*
     private void ClimbLadder()
     {

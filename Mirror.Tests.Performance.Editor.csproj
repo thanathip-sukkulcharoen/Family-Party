@@ -63,10 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Tests\Performance\Editor\NetworkIdentityPerformance.cs" />
-    <Compile Include="Assets\Mirror\Tests\Performance\Editor\NetworkIdentityPerformanceWithMultipleBehaviour.cs" />
-    <Compile Include="Assets\Mirror\Tests\Performance\Editor\NetworkWriterPerformance.cs" />
-    <None Include="Assets\Mirror\Tests\Performance\Editor\Mirror.Tests.Performance.Editor.asmdef" />
+    <Compile Include="Assets\Others\Mirror\Tests\Performance\Editor\NetworkIdentityPerformance.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Performance\Editor\NetworkIdentityPerformanceWithMultipleBehaviour.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Performance\Editor\NetworkWriterPerformance.cs" />
+    <None Include="Assets\Others\Mirror\Tests\Performance\Editor\Mirror.Tests.Performance.Editor.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

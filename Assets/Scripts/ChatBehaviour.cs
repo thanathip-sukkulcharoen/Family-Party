@@ -7,16 +7,16 @@ using System;
 
 public class ChatBehaviour : NetworkBehaviour
 {
-    [SerializeField] private GameObject chatUI = null;
+    [SerializeField] private GameObject playerUI = null;
     [SerializeField] private TMP_InputField inputField = null;
     [SerializeField] private TMP_Text chatText = null;
     [SerializeField] private CanvasGroup cg;
-    [SyncVar] public string playerName;
+    [SerializeField] private TMP_Text playerName;
     private static event Action<ChatBehaviour, string> OnMessage;
 
     public override void OnStartAuthority()
     {
-        chatUI.SetActive(true);
+        playerUI.SetActive(true);
         OnMessage += HandleNewMessage;
     }
     [ClientCallback]
@@ -34,9 +34,9 @@ public class ChatBehaviour : NetworkBehaviour
     }
 
     [Client]
-    public void Send(string message)
+    public void Send()
     {
-        if (!Input.GetKeyDown(KeyCode.Return)) { return; }
+        string message = inputField.text;
         if (string.IsNullOrWhiteSpace(message)) { return; }
         CmdSendMessage(inputField.text);
         inputField.text = string.Empty;

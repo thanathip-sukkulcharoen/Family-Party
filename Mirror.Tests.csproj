@@ -63,82 +63,82 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Tests\Editor\ArraySegmentWriterTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ArrayWriterTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\BasicAuthenticatorTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientRpcOverrideTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientRpcTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientSceneTests_ClearSpawners.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientSceneTests_GetPrefab.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientSceneTests_PrepareToSpawnSceneObjects.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientSceneTests_RegisterPrefab.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientSceneTests_RegisterSpawnHandler.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientSceneTests_UnregisterPrefab.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ClientSceneTests_UnregisterSpawnHandler.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\CommandOverrideTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\CommandTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\CustomAttrributeTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\CustomRWTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\EnumReadWriteTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ExponentialMovingAverageTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\FallbackTransportTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\FieldsInBaseClasses.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\FloatBytePackerTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\LocalConnectionBufferTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\LocalConnectionTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\LogFactoryTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\MessageBaseTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\MessageInheritanceTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\MessagePackerTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\MessageTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\MultiplexTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkBehaviourSerializeTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkBehaviourTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkClientTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkIdentityTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkManagerStopHostOnServerDisconnectTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkManagerTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkMatchCheckerTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkReaderPoolTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkReaderTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkServerTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkTransformChildTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkTransformTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkWriterPoolTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\NetworkWriterTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\RemoteTestBase.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\ScriptableObjectWriterTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\StructMessagesTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncDictionaryTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncEventSameNameTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncEventTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncListClassTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncListStructTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncListTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncSetTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncVarHookTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\SyncVarTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\TargetRpcOverrideTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\TargetRpcTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Telepathy\TransportTest.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverAssembler.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverClientRpcTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverClientServerAttributeTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverCommandTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverGeneralTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverGeneratedReaderWriterTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverMessageTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverMonoBehaviourTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverNetworkBehaviourTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverSyncDictionaryTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverSyncEventTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverSyncListTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverSyncSetTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverSyncVarHookTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverSyncVarTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverTargetRpcTests.cs" />
-    <Compile Include="Assets\Mirror\Tests\Editor\Weaver\WeaverTests.cs" />
-    <None Include="Assets\Mirror\Tests\Editor\Mirror.Tests.asmdef" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ArraySegmentWriterTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ArrayWriterTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\BasicAuthenticatorTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientRpcOverrideTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientRpcTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientSceneTests_ClearSpawners.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientSceneTests_GetPrefab.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientSceneTests_PrepareToSpawnSceneObjects.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientSceneTests_RegisterPrefab.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientSceneTests_RegisterSpawnHandler.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientSceneTests_UnregisterPrefab.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ClientSceneTests_UnregisterSpawnHandler.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\CommandOverrideTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\CommandTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\CustomAttrributeTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\CustomRWTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\EnumReadWriteTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ExponentialMovingAverageTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\FallbackTransportTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\FieldsInBaseClasses.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\FloatBytePackerTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\LocalConnectionBufferTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\LocalConnectionTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\LogFactoryTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\MessageBaseTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\MessageInheritanceTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\MessagePackerTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\MessageTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\MultiplexTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkBehaviourSerializeTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkBehaviourTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkClientTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkIdentityTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkManagerStopHostOnServerDisconnectTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkManagerTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkMatchCheckerTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkReaderPoolTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkReaderTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkServerTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkTransformChildTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkTransformTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkWriterPoolTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\NetworkWriterTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\RemoteTestBase.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\ScriptableObjectWriterTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\StructMessagesTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncDictionaryTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncEventSameNameTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncEventTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncListClassTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncListStructTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncListTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncSetTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncVarHookTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\SyncVarTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\TargetRpcOverrideTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\TargetRpcTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Telepathy\TransportTest.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverAssembler.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverClientRpcTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverClientServerAttributeTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverCommandTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverGeneralTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverGeneratedReaderWriterTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverMessageTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverMonoBehaviourTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverNetworkBehaviourTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverSyncDictionaryTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverSyncEventTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverSyncListTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverSyncSetTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverSyncVarHookTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverSyncVarTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverTargetRpcTests.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Editor\Weaver\WeaverTests.cs" />
+    <None Include="Assets\Others\Mirror\Tests\Editor\Mirror.Tests.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -341,16 +341,16 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/Work/Family Party/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

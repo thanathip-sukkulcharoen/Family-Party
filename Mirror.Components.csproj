@@ -63,28 +63,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Components\Discovery\NetworkDiscovery.cs" />
-    <Compile Include="Assets\Mirror\Components\Discovery\NetworkDiscoveryBase.cs" />
-    <Compile Include="Assets\Mirror\Components\Discovery\NetworkDiscoveryHUD.cs" />
-    <Compile Include="Assets\Mirror\Components\Discovery\ServerRequest.cs" />
-    <Compile Include="Assets\Mirror\Components\Discovery\ServerResponse.cs" />
-    <Compile Include="Assets\Mirror\Components\Experimental\NetworkRigidbody.cs" />
-    <Compile Include="Assets\Mirror\Components\Experimental\NetworkTransform.cs" />
-    <Compile Include="Assets\Mirror\Components\Experimental\NetworkTransformBase.cs" />
-    <Compile Include="Assets\Mirror\Components\Experimental\NetworkTransformChild.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkAnimator.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkLobbyManager.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkLobbyPlayer.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkMatchChecker.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkPingDisplay.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkProximityChecker.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkRoomManager.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkRoomPlayer.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkSceneChecker.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkTransform.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkTransformBase.cs" />
-    <Compile Include="Assets\Mirror\Components\NetworkTransformChild.cs" />
-    <None Include="Assets\Mirror\Components\Mirror.Components.asmdef" />
+    <Compile Include="Assets\Others\Mirror\Components\Discovery\NetworkDiscovery.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\Discovery\NetworkDiscoveryBase.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\Discovery\NetworkDiscoveryHUD.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\Discovery\ServerRequest.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\Discovery\ServerResponse.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\Experimental\NetworkRigidbody.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\Experimental\NetworkTransform.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\Experimental\NetworkTransformBase.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\Experimental\NetworkTransformChild.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkAnimator.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkLobbyManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkLobbyPlayer.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkMatchChecker.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkPingDisplay.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkProximityChecker.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkRoomManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkRoomPlayer.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkSceneChecker.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkTransform.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkTransformBase.cs" />
+    <Compile Include="Assets\Others\Mirror\Components\NetworkTransformChild.cs" />
+    <None Include="Assets\Others\Mirror\Components\Mirror.Components.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -287,25 +287,25 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

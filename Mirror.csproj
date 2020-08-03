@@ -63,69 +63,69 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Assets\Mirror\Runtime\ClientScene.cs" />
-    <Compile Include="Assets\Mirror\Runtime\CustomAttributes.cs" />
-    <Compile Include="Assets\Mirror\Runtime\DotNetCompatibility.cs" />
-    <Compile Include="Assets\Mirror\Runtime\ExponentialMovingAverage.cs" />
-    <Compile Include="Assets\Mirror\Runtime\FloatBytePacker.cs" />
-    <Compile Include="Assets\Mirror\Runtime\LocalConnections.cs" />
-    <Compile Include="Assets\Mirror\Runtime\LogFactory.cs" />
-    <Compile Include="Assets\Mirror\Runtime\LogFilter.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\ConsoleColorLogHandler.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\EditorLogSettingsLoader.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\LogFactory.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\LogSettings.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\NetworkHeadlessLogger.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\NetworkLogSettings.cs" />
-    <Compile Include="Assets\Mirror\Runtime\MessagePacker.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Messages.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkAuthenticator.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkBehaviour.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkClient.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkConnection.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkConnectionToClient.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkConnectionToServer.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkDiagnostics.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkIdentity.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkManager.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkManagerHUD.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkMessage.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkReader.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkReaderPool.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkServer.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkStartPosition.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkTime.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkVisibility.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkWriter.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkWriterPool.cs" />
-    <Compile Include="Assets\Mirror\Runtime\RemoteCallHelper.cs" />
-    <Compile Include="Assets\Mirror\Runtime\StringHash.cs" />
-    <Compile Include="Assets\Mirror\Runtime\SyncDictionary.cs" />
-    <Compile Include="Assets\Mirror\Runtime\SyncList.cs" />
-    <Compile Include="Assets\Mirror\Runtime\SyncObject.cs" />
-    <Compile Include="Assets\Mirror\Runtime\SyncSet.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\FallbackTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\LLAPITransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\MultiplexTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\Client.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\Common.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\EventType.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\Logger.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\Message.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\NetworkStreamExtensions.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\SafeQueue.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\Server.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\ThreadExtensions.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\Utils.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\TelepathyTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Transport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Client.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\ClientJs.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\Server.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\Websocket\WebsocketTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\UNetwork.cs" />
-    <None Include="Assets\Mirror\Runtime\Mirror.asmdef" />
+    <Compile Include="Assets\Others\Mirror\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\ClientScene.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\CustomAttributes.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\DotNetCompatibility.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\ExponentialMovingAverage.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\FloatBytePacker.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\LocalConnections.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\LogFactory.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\LogFilter.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Logging\ConsoleColorLogHandler.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Logging\EditorLogSettingsLoader.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Logging\LogFactory.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Logging\LogSettings.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Logging\NetworkHeadlessLogger.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Logging\NetworkLogSettings.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\MessagePacker.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Messages.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkAuthenticator.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkBehaviour.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkClient.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkConnection.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkConnectionToClient.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkConnectionToServer.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkDiagnostics.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkIdentity.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkManager.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkManagerHUD.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkMessage.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkReader.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkReaderPool.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkServer.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkStartPosition.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkTime.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkVisibility.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkWriter.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\NetworkWriterPool.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\RemoteCallHelper.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\StringHash.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\SyncDictionary.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\SyncList.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\SyncObject.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\SyncSet.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\FallbackTransport.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\LLAPITransport.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\MultiplexTransport.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\Client.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\Common.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\EventType.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\Logger.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\Message.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\NetworkStreamExtensions.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\SafeQueue.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\Server.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\ThreadExtensions.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Telepathy\Utils.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\TelepathyTransport.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Transport.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Client.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\ClientJs.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\Server.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\Transport\Websocket\WebsocketTransport.cs" />
+    <Compile Include="Assets\Others\Mirror\Runtime\UNetwork.cs" />
+    <None Include="Assets\Others\Mirror\Runtime\Mirror.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -328,25 +328,25 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>D:/Work/Family Party/Assets/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>D:/Work/Family Party/Assets/Others/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

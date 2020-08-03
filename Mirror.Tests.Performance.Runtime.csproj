@@ -63,9 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Tests\Performance\Runtime\BenchmarkPerformance.cs" />
-    <Compile Include="Assets\Mirror\Tests\Performance\Runtime\ULocalConnectionPerformance.cs" />
-    <None Include="Assets\Mirror\Tests\Performance\Runtime\Mirror.Tests.Performance.Runtime.asmdef" />
+    <Compile Include="Assets\Others\Mirror\Tests\Performance\Runtime\BenchmarkPerformance.cs" />
+    <Compile Include="Assets\Others\Mirror\Tests\Performance\Runtime\ULocalConnectionPerformance.cs" />
+    <None Include="Assets\Others\Mirror\Tests\Performance\Runtime\Mirror.Tests.Performance.Runtime.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
